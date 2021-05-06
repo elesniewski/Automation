@@ -1,4 +1,4 @@
-package Academy;
+wpackage Academy;
 
 import static org.junit.Assert.assertEquals;
 
@@ -19,10 +19,10 @@ public class BrowserTest {
 		System.out.println("Hello Guys");
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
-		driver.get("https://rahylshettyacademy.azurewebsites.net/webapp/");
+		driver.get("https://elesniewskiacademy.azurewebsites.net/webapp/");
 		String text =driver.findElement(By.cssSelector("h1")).getText();
 		System.out.println(text);
-		Assert.assertTrue(text.equalsIgnoreCase("RahulShettyAcademy.com Learning"));
+		Assert.assertTrue(text.equalsIgnoreCase("EricLesniewskiAcademy.com Learning"));
 		driver.close();
 	
 		
